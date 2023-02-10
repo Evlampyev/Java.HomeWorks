@@ -1,16 +1,31 @@
-import java.util.Scanner;
 
 // Реализовать простой калькулятор (+ - / *)
+import java.util.Scanner;
+
 public class task3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String example = scan.nextLine();
+        int first = scan.nextInt();
+        String operation = scan.next();
+        int second = scan.nextInt();
         scan.close();
-
-                
-    }   
-    
-    public static int multiplication(text: String) {
-        System.out.println(text);
+        System.out.println(operation);
+        int rezult = 0;
+        switch (operation) {
+            case "+":
+                rezult = first + second;
+                break;
+            case "-":
+                rezult = first - second;
+                break;
+            case "/":
+                rezult = first / second;
+                break;
+            case "*":
+                rezult = first * second;
+                break;
+        }
+        System.out.println(rezult);
     }
+
 }
