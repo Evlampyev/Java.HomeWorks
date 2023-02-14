@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Task1 {
     public static void main(String[] args) {
-        int[] array = { 2, 5, 3, 7, 6, 1 };
+        int[] array = { 2, 5, 3, 7, 6, 1, 4, 7, 1};
         System.out.print("Исходный массив: ");
         System.out.println(Arrays.toString(array));
         loggist(array);
@@ -24,7 +24,7 @@ public class Task1 {
     }
 
     public static void loggist(int[] array) {
-        String file_name = "log.txt";
+        String file_name = "Les2/log.txt";
         try {
             FileWriter writer = new FileWriter(file_name, true);
             writer.write(Arrays.toString(array));
